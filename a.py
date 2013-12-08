@@ -55,7 +55,6 @@ class Upload:
 					while len(que)>=1 and que[len(que)-1][1]>sumv:
 						que.pop(len(que)-1)
 					que.append([k,sumv])	
-					print nowv
 		f = open("his.json","w")
 		json.dump(his,f)	
 		f.close()
