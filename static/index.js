@@ -1,13 +1,13 @@
 		var NOWB = -1;
 		var SPEED = 0;
 		var set_color = function(i,j,co){
-			if (co!=""){
+			if (co!="" && i<n && j<m){
 				document.getElementById("table").rows[i].cells[j].style.background = co;
 			}
 		}
 
 		var set_border = function(i,j,st){
-			if (st!=""){
+			if (st!="" && i<n && j<m){
 				document.getElementById("table").rows[i].cells[j].style.border = st;
 			}
 		}	
